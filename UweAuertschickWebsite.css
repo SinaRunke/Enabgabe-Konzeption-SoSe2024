@@ -1,0 +1,388 @@
+@font-face {
+    font-family: 'Überschrift';
+    src: url('fonts/Blockhead-BlackFace-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Texte';
+    src: url('fonts/fonnts.com-Chantal_Medium.ttf') format('truetype');
+}
+
+/* Allgemeine Stile für die Seite */
+body {
+    font-family: 'Texte', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000; /* Hintergrundfarbe auf Schwarz gesetzt */
+    color: #fff; /* Textfarbe auf Weiß gesetzt für bessere Lesbarkeit */
+}
+
+/* Header-Stile */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: yellow; /* Etwas dunkleres Grau für den Header */
+    color: #fff;
+    font-family: 'Texte', Arial, sans-serif;
+
+}
+
+header div {
+    flex: 1;
+    text-align: center;
+    color: #000;
+    
+}
+
+.header-left {
+    text-align: left;
+}
+
+.header-right {
+    text-align: right;
+}
+
+/* Top Section Stile */
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Ändert die Ausrichtung auf die Mitte */
+    padding: 20px;
+    position: relative;
+}
+
+.top-section .image-box {
+    width: 100%;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.top-section .image-box img {
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+}
+
+.top-section .title-box {
+    width: 50%;
+    text-align: center; /* Hier habe ich die Überschrift Ausrichtung geändert */
+}
+
+.top-section .title-box h1 {
+    font-family: 'Überschrift', Arial, sans-serif;
+    font-size: 300%;
+    text-align: center;
+    margin: 0; /* Entfernt Standard-Margin */
+    color: yellow; /* Überschriftfarbe auf Weiß gesetzt */
+}
+
+/* Trailer Section Stile */
+.trailer-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trailer-section h2 {
+    font-family: 'Überschrift', Arial, sans-serif;
+    font-size: 250%;
+    text-align: center;
+    color: yellow; /* Titel Farbe auf Weiß gesetzt */
+}
+
+.video-box {
+    width: 100%; /* Hier habe ich die Größe des Videos verändert */
+    max-width: 1600px; /* Größere maximale Breite */
+    padding: 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Box-Schatten für besseren Kontrast */
+    margin: 10px 0;
+    border: none;
+}
+
+.video-box video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Description Section Stile */
+.description-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-box {
+    font-size: 100%;
+    padding: 10px;
+    background-color: black; /* Hintergrundfarbe auf dunkles Grau gesetzt */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Box-Schatten für besseren Kontrast */
+    margin: 10px 0;
+    width: 42.5%;
+    text-align: center;
+    color: #fff; /* Textfarbe auf Weiß gesetzt */
+}
+
+/* Bildboxen Stile */
+.image-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.image-box {
+    width: 48%;
+    margin: 1%;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+}
+
+/* Design Phase Stile */
+.design-phase {
+    padding: 20px;
+    font-size: 125%;
+}
+
+.design-phase h3 {
+    font-family: 'Überschrift', Arial, sans-serif;
+    font-size: 250%;
+    color: yellow; /* Titel Farbe auf Weiß gesetzt */
+}
+
+.design-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.design-text {
+    width: 60%;
+    font-size: 90%;
+    padding: 10px;
+    background-color: black; /* Hintergrundfarbe auf dunkles Grau gesetzt */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Box-Schatten für besseren Kontrast */
+    color: #fff; /* Textfarbe auf Weiß gesetzt */
+}
+
+.design-image {
+    width: 15%;
+    margin: 10%;
+    margin-top: -5%;
+}
+
+.design-image img {
+    width: 100%;
+    height: auto;
+}
+
+.image-strip-box {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    margin-top: -10%;
+    margin-left: -10%;
+    position:relative;
+}
+
+.image-strip-right-box {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    
+}
+
+.image-strip-right-box img {
+    width: 15%;
+    height: auto;
+    margin: 0 3px;
+    
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 90%;
+}
+
+.left-text-box {
+    width: 60%;
+    padding: 10px;
+    background-color: black; /* Hintergrundfarbe auf dunkles Grau gesetzt */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Box-Schatten für besseren Kontrast */
+    color: #fff; /* Textfarbe auf Weiß gesetzt */
+}
+
+.right-images-box {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 13%;
+}
+
+.right-images .image-box {
+    margin-bottom: 10px;
+    margin-left: 22%;
+}
+
+.right-images img {
+    width: 100%;
+    height: auto;
+    margin-left: 13%;
+}
+
+/* Backgrounds Stile */
+.backgrounds {
+    padding: 20px;
+    font-size: 100%;
+}
+
+.backgrounds h3 {
+    font-family: 'Überschrift', Arial, sans-serif;
+    font-size: 250%;
+    text-align: center;
+    color: yellow; /* Titel Farbe auf Weiß gesetzt */
+}
+
+.background-text-box {
+    padding: 10px;
+    font-size: 100%;
+    background-color: black; /* Hintergrundfarbe auf dunkles Grau gesetzt */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Box-Schatten für besseren Kontrast */
+    margin: 0 auto;
+    width: 42.5%;
+    color: #fff; /* Textfarbe auf Weiß gesetzt */
+}
+
+.background-images-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.background-image-box {
+    width: 48%; /* Anpassen für flexbox layout */
+    margin: 1%;
+}
+
+.background-image-box img {
+    width: 100%;
+    height: auto;
+}
+
+/* Animation Stile */
+.animation {
+    padding: 20px;
+    font-size: 100%;
+}
+
+.animation h3 {
+    font-family: 'Überschrift', Arial, sans-serif;
+    font-size: 250%;
+    text-align: center;
+    color: yellow; /* Titel Farbe auf Weiß gesetzt */
+}
+
+.animation-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.animation-text {
+    width: 42.5%;
+    padding: 10px;
+    background-color: black; /* Hintergrundfarbe auf dunkles Grau gesetzt */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Box-Schatten für besseren Kontrast */
+    margin: 0 auto;
+    color: #fff; /* Textfarbe auf Weiß gesetzt */
+}
+
+.animation-videos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.video-box {
+    width: 45%;
+    margin: 0 10px;
+}
+
+.video-box video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Post-Production Stile */
+.post-production {
+    padding: 20px;
+}
+
+.post-production h3 {
+    font-family: 'Überschrift', Arial, sans-serif;
+    font-size: 250%;
+    text-align: center;
+    color: yellow; /* Titel Farbe auf Weiß gesetzt */
+}
+
+.post-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-images-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.post-image-box {
+    width: 30%;
+    margin: 1%;
+}
+
+.post-image-box img {
+    width: 100%;
+    height: auto;
+}
+
+.post-text-box {
+    width: 42.5%;
+    padding: 10px;
+    background-color: black; /* Hintergrundfarbe auf dunkles Grau gesetzt */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Box-Schatten für besseren Kontrast */
+    margin: 20px auto;
+    color: #fff; /* Textfarbe auf Weiß gesetzt */
+}
+
+/* Technical Info Stile */
+.technical-info {
+    padding: 20px;
+    font-size: 100%;
+}
+
+.technical-info h3 {
+    font-family: 'Überschrift', Arial, sans-serif;
+    font-size: 250%;
+    text-align: center;
+    color: yellow; /* Titel Farbe auf Weiß gesetzt */
+}
+
+.technical-text-box {
+    width: 42.5%;
+    padding: 10px;
+    background-color: black; /* Hintergrundfarbe auf dunkles Grau gesetzt */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Box-Schatten für besseren Kontrast */
+    margin: 0 auto;
+    color: #fff; /* Textfarbe auf Weiß gesetzt */
+}
